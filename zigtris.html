@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" name=viewport>
+    <title>zigtris</title>
+    <style>
+      body {
+        margin:0;
+        background-color:#292929
+      }
+      .game {
+        width:800px;
+        height:600px;
+        border: 1px solid #ffffff;
+        image-rendering:optimizeSpeed;
+        image-rendering:-moz-crisp-edges;
+        image-rendering:-o-crisp-edges;
+        image-rendering:-webkit-optimize-contrast;
+        image-rendering:optimize-contrast;
+        image-rendering:crisp-edges;
+        image-rendering:pixelated;
+        -ms-interpolation-mode:nearest-neighbor
+      }
+    </style>
+  </head>
+  <body>
+    <span style="width: 100%; padding-top: 24px; padding-bottom: 24px; color: #ffffff; display: inline-block; font-size: 24px; text-align: center;">
+      zigtris
+    </span>
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <canvas class=game id=canvas oncontextmenu=event.preventDefault()>
+      </canvas>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <ul style="margin: 0; padding-top: 24px; padding-bottom: 24px; color: #ffffff; display: inline-block; font-size: 24px;">
+        <li>Arrow keys for movement</li>
+        <li>Z: Anti-clockwise rotation</li>
+        <li>X: Clockwise rotation</li>
+        <li>C: Hold</li>
+        <li>P: Pause</li>
+      </ul>
+    </div>
+
+  <script>
+    var Module={preRun:[],print:function(o){o=Array.prototype.slice.call(arguments).join(" "),console.log(o)},printErr:function(o){o=Array.prototype.slice.call(arguments).join(" "),console.error(o)}};
+    window.onerror=function(){console.log("onerror: "+event.message);}
+  </script>
+  <script async src=/script/zigtris.js>
+  </script>
+  </body>
+</html>
