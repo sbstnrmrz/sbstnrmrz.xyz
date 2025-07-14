@@ -20,7 +20,7 @@
       }
 
       .project-div {
-        @apply ml-10 mr-10 md:ml-60 md:mr-60 bg-[#303030] py-4 text-center items-center justify-center;
+        @apply ml-10 mr-10 md:ml-60 md:mr-60 bg-[#303030] text-center items-center justify-center;
       }
 
       .project-paragraph {
@@ -58,46 +58,41 @@
           </svg>
         </a>
       </div>
-      <p class="py-4 text-white text-xl tracking-wide text-center bg-[#303030]">
-      My name is Sebastian Ramirez. I'm a computer engineering student and computers enthusiast since i can remember. 
-      I like writing low level languages like C/C++ and Zig. 
-      But i like Go, C# and Javascript too. I like Linux and tinkering with computers and technology in general.
+      <p class="p-4 text-white text-xl tracking-wide text-center">
+        My name is Sebastian Ramirez, I'm a computer engineering student. 
+        I like programming in low-level languages like C/C++ and Zig, and higher level ones like Go, C#, and TypeScript.
       </p>
+    <hr>
     </div>
+
     <div class="w-full items-center justify-center">
       <span class="inline-block w-full py-4 font-bold text-[#ffffff] text-center text-3xl">
-        Here are some of my projects 
+        Some projects I've worked on
       </span>
       <div id="zigtris" class="project-div">
         <a href="https://github.com/sbstnrmrz/zigtris" target="_blank" class="project-title">
           zigtris
         </a>
         <p class="project-paragraph">
-        Tetris clone made with <a href="https://ziglang.org/" target="_blank" class="link-style">Zig</a> 
-        and the <a href="https://github.com/floooh/sokol" target="_blank" class="link-style">Sokol</a> library.<br>
+        Tetris clone made with Zig 
+        <br>
         It has a playable WebAssembly version that you can try <a href="zigtris.html" target="_blank" class="link-style">here</a>.
         </p>
+        <div class='p-4'>
         <img src="./res/zigtris.gif" class="inline-block">
+        </div>
+
       </div>
       <div id="termblackjack" class="project-div mt-8">
         <a href="https://github.com/sbstnrmrz/termblackjack" target="_blank" class="project-title">
           termblackjack
         </a>
         <p class="project-paragraph">
-        Blackjack game for the terminal made with <a href="https://go.dev/" target="_blank" class="link-style">Go</a> 
-        and the <a href="https://github.com/rivo/tview" target="_blank" class="link-style">tview</a> library.
+        Blackjack game for the terminal made with Go 
         </p>
-        <img src="./res/termblackjack.gif" class="inline-block">
-      </div>
-      <div id="twitter-clone" class="project-div mt-8">
-        <a href="https://github.com/sbstnrmrz/twitter-clone" target="_blank" class="project-title">
-          Twitter clone
-        </a>
-        <p class="project-paragraph">
-        Simple Twitter clone i made for university with vanilla HTML, CSS and Javascript for the frontend, 
-        Go and SQLite for the backend
-        </p>
-        <img src="./res/termblackjack.gif" class="inline-block">
+        <div class='p-4'>
+          <img src="./res/termblackjack.gif" class="inline-block">
+        </div>
       </div>
       <div id="simpl3-player" class="project-div mt-8">
         <a href="https://github.com/sbstnrmrz/simpl3-player" target="_blank" class="project-title">
@@ -106,7 +101,9 @@
         <p class="project-paragraph">
         MP3 player made with C, miniaudio and SDL3 
         </p>
-        <img src="./res/termblackjack.gif" class="inline-block">
+        <div class='p-4'>
+          <img src="./res/termblackjack.gif" class="inline-block">
+        </div>
       </div>
     </div>
   </body>
